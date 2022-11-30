@@ -5,6 +5,7 @@ import Lifting from "./img/Lifting.avif";
 import Slogan from "../../Slogan";
 import About from "../../About/About";
 import Ready from "../../Ready/Ready";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -54,9 +55,9 @@ const HomePage = () => {
               </div>
             </div>
             <div className="text-center mt-20  ">
-              <a href="/classes" className="btn  ">
+              <Link to="/classes" className="btn  ">
                 CHECK ALL CLASSES
-              </a>
+              </Link>
             </div>
           </div>
         </div>

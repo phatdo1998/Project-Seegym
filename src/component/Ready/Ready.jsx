@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Ready() {
   return (
     <div className="w-full h-[218px] xl:h-[432px] bg-white flex justify-center items-center z-10 px-4">
@@ -6,9 +7,9 @@ function Ready() {
           ARE YOU READY FOR CHANGES?
         </h1>
         <div className="mb-3">
-          <a href="/signup" className="btn ">
+          <Link to="/signup" className="btn ">
             MAKE IT HAPPEN
-          </a>
+          </Link>
         </div>
       </div>
     </div>

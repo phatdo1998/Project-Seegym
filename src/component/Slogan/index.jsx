@@ -1,4 +1,5 @@
 import HeaderImg from "../Header/img/HeaderImg.webp";
+import { Link } from "react-router-dom";
 
 function Slogan() {
   const image = true;
@@ -23,9 +24,9 @@ function Slogan() {
             <div className="text-[18px] my-16 font-semibold font-sans leading-tight">
               Empower yourself to make the changes you need to make
             </div>
-            <a href="/prices" className="btn hover:bg-red-600 ">
+            <Link to="/prices" className="btn hover:bg-red-600 ">
               LET'S GET STARTED
-            </a>
+            </Link>
           </div>
         </div>
       </div>

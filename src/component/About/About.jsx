@@ -1,5 +1,6 @@
 import about from "./img/about.webp";
 import about2 from "./img/about2.webp";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -22,9 +23,9 @@ const About = () => {
               qualified trainers who can help you develop a plan.
             </p>
             <div className="mt-10 xl:mt-32 pb-5">
-              <a href="/schedule" className="btn ">
+              <Link to="/schedule" className="btn ">
                 SCHEDULE
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,9 +50,9 @@ const About = () => {
             </p>
           </div>
           <div className="mt-10 xl:mt-32 pb-5">
-            <a href="/classes" className="btn ">
+            <Link to="classes" className="btn ">
               CLASSES
-            </a>
+            </Link>
           </div>
         </div>
       </div>
