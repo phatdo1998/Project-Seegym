@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { publicRoutes } from "./Router/index";
 import { DefaultLayout } from "./Layout";
 import { useEffect, useState } from "react";
