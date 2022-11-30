@@ -17,6 +17,7 @@ function SignUp() {
         .min(8, "vui lòng  nhập ít nhất 8 kí tự"),
       email: Yup.string()
         .required("vui lòng nhập email")
+        // eslint-disable-next-line no-useless-escape
         .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "email không chính xác"),
       password: Yup.string()
         .required("vui lòng nhập mật khẩu")

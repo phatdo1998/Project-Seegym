@@ -1,7 +1,5 @@
 import { NavLink } from "react-router-dom";
-import HeaderImg from "./img/HeaderImg.webp";
 import { HiOutlineMenu } from "react-icons/hi";
-import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 const Header = (props) => {
   const { isMobile } = props;
