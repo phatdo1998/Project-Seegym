@@ -7,8 +7,6 @@ function DefaultLayout({ children, ...props }) {
     <div className="">
       <Navbar isMobile={isMobile} />
       <div className="">{children}</div>
-      {/* <About /> */}
-      {/* <Ready /> */}
       <Footer />
     </div>
   );
