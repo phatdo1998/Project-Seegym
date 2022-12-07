@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
 // import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
@@ -88,27 +88,47 @@ function Linkbar(props) {
                 </li>
               </ul>
             )}
-            {/* {openMenu && (
-              <div className="w-full h-[130px] mt-2  absolute right-0 bg-white p-4 text-left text-black ">
+            {openMenu && (
+              <div className="w-full h-[240px] mt-2 z-50 absolute right-0 bg-white px-4 text-left text-black ">
                 <ul className="flex flex-col">
-                  <Link to="/classes" className="">
+                  <Link
+                    to="/classes"
+                    className="py-[10px] border-y-2"
+                    onClick={() => setOpenMenu(false)}
+                  >
                     classes
                   </Link>
-                  <Link to="/personal" className="pt-1 hover: ">
+                  <Link
+                    to="/personal"
+                    className="py-[10px] border-y-2 "
+                    onClick={() => setOpenMenu(false)}
+                  >
                     personal
                   </Link>
-                  <Link to="/prices" className="pt-1">
+                  <Link
+                    to="/prices"
+                    className="py-[10px] border-y-2"
+                    onClick={() => setOpenMenu(false)}
+                  >
                     prices
                   </Link>
-                  <Link to="/schedule" className="pt-1">
+                  <Link
+                    to="/schedule"
+                    className="py-[10px] border-y-2"
+                    onClick={() => setOpenMenu(false)}
+                  >
                     schedule
                   </Link>
-                  <Link to="/signup" className="">
+                  <Link
+                    to="/signup"
+                    className="py-[10px] border-t-2"
+                    onClick={() => setOpenMenu(false)}
+                  >
                     signup
                   </Link>
                 </ul>
               </div>
-            )} */}
+            )}
           </ul>
         </div>
       </div>

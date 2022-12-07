@@ -1,6 +1,7 @@
-import { Routes, Route, useLocation } from "react-router-dom";
 import { publicRoutes } from "./Router/index";
 import { DefaultLayout } from "./Layout";
+import "./App.css";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
   }, [windowSize]);
 
   return (
-    <div className="w-[100%] font-oswald overflow-hidden">
+    <div className="w-[100%] font-oswald overflow-hidden ">
       <Routes>
         {publicRoutes.map((route, index) => {
           const Layout = (route.layout = DefaultLayout);

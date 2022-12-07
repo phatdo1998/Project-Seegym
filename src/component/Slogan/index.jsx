@@ -5,7 +5,7 @@ function Slogan() {
   const image = true;
 
   return (
-    <div className="relative xl:h-[872px] h-[429px]">
+    <div className="relative xl:h-[872px] h-[429px] z-0">
       {image && (
         <img
           src={HeaderImg}
