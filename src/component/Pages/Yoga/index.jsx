@@ -1,5 +1,5 @@
 import Yoga1 from "./img/yoga1.avif";
-import Yoga2 from "./img/yoga1.avif";
+import Yoga2 from "./img/yoga2.avif";
 import Ready from "../../Ready/Ready";
 import { Link } from "react-router-dom";
 
