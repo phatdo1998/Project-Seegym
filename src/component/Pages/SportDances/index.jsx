@@ -7,7 +7,7 @@ function SportDances() {
   return (
     <>
       <div className="bg-black xl:flex xl: items-center xl:justify-center">
-        <div className=" text-white px-4 h-[1035px] xl:w-[1224px] xl:h-[940px] xl:flex xl:items-center xl:p-0 xl:justify-center    ">
+        <div className=" text-white px-4 h-[1080px] xl:w-[1224px] xl:h-[940px] xl:flex xl:items-center xl:p-0 xl:justify-center    ">
           <div className="xl:w-[1224px]">
             <h1 className="font-extrabold text-[32px] xl:text-5xl">
               Sport Dances
