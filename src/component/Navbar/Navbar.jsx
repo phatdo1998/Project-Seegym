@@ -19,7 +19,9 @@ function Linkbar(props) {
       <div className="xl:w-[1224px] z-10 w-[398px] px-4 pb-1 xl:px-0 ">
         <div className="flex items-center xl:h-[92px]">
           <span className="md:text-2xl text-xl font-bold py-10 px-4 xl:px-0 m-[-25px] xl:m-0">
-            <NavLink to="/">See Gym</NavLink>
+            <NavLink onClick={() => setOpenMenu(false)} to="/">
+              See Gym
+            </NavLink>
           </span>
           <ul className="xl:ml-0 ml-auto py-10 ">
             {openMenu && isMobile ? (
