@@ -2,7 +2,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { publicRoutes } from "./Router/index";
 import { DefaultLayout } from "./Layout";
 import { useEffect, useState } from "react";
-import HeaderLayout from "./Layout/HeaderLayout";
 
 function App() {
   const location = useLocation();
@@ -43,7 +42,7 @@ function App() {
     <div className="w-[100%] font-oswald overflow-hidden">
       <Routes>
         {publicRoutes.map((route, index) => {
-          const Layout = route.layout === null ? DefaultLayout : HeaderLayout;
+          const Layout = (route.layout = DefaultLayout);
           const Page = route.conponent;
           return (
             <Route

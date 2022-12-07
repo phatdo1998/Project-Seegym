@@ -8,6 +8,10 @@ import Cardio from "../component/Pages/Cardio";
 import Yoga from "../component/Pages/Yoga";
 import Lifting from "../component/Pages/Lifting";
 import Press from "../component/Pages/Press";
+import Callanetics from "../component/Pages/Callanetics";
+import SportDances from "../component/Pages/SportDances";
+import CarioBoxing from "../component/Pages/CardioBoxing";
+import BodyBuilding from "../component/Pages/BodyBuilding";
 
 export const publicRoutes = [
   { path: "/", conponent: HomePage },
@@ -20,4 +24,8 @@ export const publicRoutes = [
   { path: "/yoga", conponent: Yoga },
   { path: "/lifting", conponent: Lifting },
   { path: "/press", conponent: Press },
+  { path: "/callanetics", conponent: Callanetics },
+  { path: "/sportDances", conponent: SportDances },
+  { path: "/cardioBoxing", conponent: CarioBoxing },
+  { path: "/bodyBuilding", conponent: BodyBuilding },
 ];

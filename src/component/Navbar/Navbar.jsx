@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
-import { MdOutlineClose } from "react-icons/md";
+// import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 
 function Linkbar(props) {
@@ -9,12 +9,17 @@ function Linkbar(props) {
   const handleMenu = () => {
     setOpenMenu(!openMenu);
   };
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      borderBottom: isActive ? "2px solid" : "",
+    };
+  };
   return (
     <div className="bg-black text-white flex justify-center items-center">
       <div className="xl:w-[1224px] z-10 w-[398px] px-4 pb-1 xl:px-0 ">
         <div className="flex items-center xl:h-[92px]">
           <span className="md:text-2xl text-xl font-bold py-10 px-4 xl:px-0 m-[-25px] xl:m-0">
-            <Link to="/">See Gym</Link>
+            <NavLink to="/">See Gym</NavLink>
           </span>
           <ul className="xl:ml-0 ml-auto py-10 ">
             {openMenu && isMobile ? (
@@ -37,38 +42,49 @@ function Linkbar(props) {
             ) : (
               <ul className="flex items-center gap-8 py-10 px-4 text-base">
                 <li>
-                  <Link
+                  <NavLink
+                    style={navLinkStyles}
                     className="ml-5 hover:border-b py-1 font-sans"
                     to="/classes"
                   >
                     classes
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
+                    style={navLinkStyles}
                     className="hover:border-b py-1 font-sans"
                     to="/personal"
                   >
                     Personal Workouts
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link className="hover:border-b py-1 font-sans" to="/prices">
+                  <NavLink
+                    style={navLinkStyles}
+                    className="hover:border-b py-1 font-sans"
+                    to="/prices"
+                  >
                     Prices & Plans
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link
+                  <NavLink
+                    style={navLinkStyles}
                     className="hover:border-b py-1 font-sans"
                     to="/schedule"
                   >
                     Schedule
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link className="hover:border-b py-1 font-sans" to="/sigunup">
+                  <NavLink
+                    style={navLinkStyles}
+                    className="hover:border-b py-1 font-sans"
+                    to="/signup"
+                  >
                     Sign up
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             )}

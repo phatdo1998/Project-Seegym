@@ -32,7 +32,7 @@ function Classes() {
                 className=" h-[309px] object-cover mb-4 x xl:w-[503px] xl:h-[368px]l:w-[503px] xl:h-[368px]"
               />
               <Link
-                to="/"
+                to="/callanetics"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Callanetics
@@ -45,12 +45,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/yoga"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Air Yoga
-              </a>
+              </Link>
             </div>
 
             <div className="mb-6 xl:w-[503px] xl:h-[368px]">
@@ -59,12 +59,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/cardioBoxing"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Cardio Boxing
-              </a>
+              </Link>
             </div>
 
             <div className="mb-6 xl:w-[503px] xl:h-[368px]">
@@ -73,12 +73,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/lifting"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Lifting
-              </a>
+              </Link>
             </div>
 
             <div className="mb-6 xl:w-[503px] xl:h-[368px]">
@@ -87,12 +87,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/cardio"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Cardio
-              </a>
+              </Link>
             </div>
 
             <div className="mb-6 xl:w-[503px] xl:h-[368px]">
@@ -101,12 +101,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/sportDances"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Sport Dances
-              </a>
+              </Link>
             </div>
 
             <div className="mb-6 xl:w-[503px] xl:h-[368px]">
@@ -115,12 +115,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/bodyBuilding"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Body Building
-              </a>
+              </Link>
             </div>
 
             <div className="mb-6 xl:w-[503px] xl:h-[368px]">
@@ -129,12 +129,12 @@ function Classes() {
                 alt=""
                 className="h-[309px] object-cover mb-4 xl:w-[503px] xl:h-[368px]"
               />
-              <a
-                href="/"
+              <Link
+                to="/press"
                 className="text-2xl font-bold underline xl:text-[30px]"
               >
                 Press & Back
-              </a>
+              </Link>
             </div>
           </div>
         </div>

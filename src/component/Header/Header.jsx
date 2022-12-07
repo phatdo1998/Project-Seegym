@@ -7,6 +7,12 @@ const Header = (props) => {
   const handleMenu = () => {
     setOpenMenu(!openMenu);
   };
+  const navLinkStyles = ({ isActive }) => {
+    return {
+      borderBottom: isActive ? "2px" : "",
+      textDecoration: isActive ? "underline" : "none",
+    };
+  };
   return (
     <div className="w-[100%]  text-white bg-black flex justify-center text-sm  relative">
       <div className="md:w-[1224px] z-10 w-[398px] px-4 xl:px-0 ">
@@ -36,12 +42,8 @@ const Header = (props) => {
               <ul className="flex items-center gap-8 py-10 px-4 text-base ">
                 <li>
                   <NavLink
-                    className={({ isActive }) =>
-                      isActive
-                        ? "ml-5 hover:border-b py-1 font-sans border-b-2 "
-                        : "ml-5 hover:border-b py-1 font-sans"
-                    }
-                    // className="ml-5 hover:border-b py-1 font-sans "
+                    style={navLinkStyles}
+                    className="ml-5 hover:border-b py-1 font-sans "
                     to="classes"
                   >
                     classes

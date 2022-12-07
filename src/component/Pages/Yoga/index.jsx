@@ -1,6 +1,7 @@
 import Yoga1 from "./img/yoga1.avif";
 import Yoga2 from "./img/yoga1.avif";
 import Ready from "../../Ready/Ready";
+import { Link } from "react-router-dom";
 
 function Yoga() {
   return (
@@ -8,7 +9,7 @@ function Yoga() {
       <div className="bg-black xl:flex xl: items-center xl:justify-center">
         <div className=" text-white px-4 h-[970px] xl:w-[1224px] xl:h-[1060x] xl:flex xl:items-center xl:p-0 xl:justify-center    ">
           <div className="xl:w-[50%]">
-            <h1 className="font-extrabold text-[32px]">Air Yoga</h1>
+            <h1 className="font-extrabold text-[32px] xl:text-5xl">Air Yoga</h1>
             <p className="font-sans text-[18px] my-8">
               Every Wednesday and Saturday 8:00 AM
             </p>
@@ -22,9 +23,9 @@ function Yoga() {
               building of hanging. Whether you’ve tried air yoga before or are a
               total beginner, you’re welcome in our classes.
             </p>
-            <a href="/prices" className="btn mb-10 ">
+            <Link to="/prices" className="btn mb-10 ">
               BOOK NOW
-            </a>
+            </Link>
           </div>
           <div className="mt-10">
             <img

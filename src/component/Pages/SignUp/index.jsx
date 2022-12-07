@@ -13,7 +13,7 @@ function SignUp() {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .required("vui lòng nhập name")
+        .required("vui lòng nhập tên của bạn")
         .min(8, "vui lòng  nhập ít nhất 8 kí tự"),
       email: Yup.string()
         .required("vui lòng nhập email")
@@ -53,9 +53,9 @@ function SignUp() {
               onSubmit={formik.handleSubmit}
               className="flex flex-col text-black flex-1"
             >
-              {/* <pre>{JSON.stringify(formik.errors)}</pre> */}
               <label className="text-white">Name*</label>
               <input
+                color="red"
                 placeholder="Your name"
                 type="text"
                 name="name"
