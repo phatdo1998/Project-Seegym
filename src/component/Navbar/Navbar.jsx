@@ -44,7 +44,7 @@ function Linkbar(props) {
                     className="ml-5 hover:border-b py-1 font-sans"
                     to="/classes"
                   >
-                    classes
+                    Classes
                   </NavLink>
                 </li>
                 <li>
@@ -94,7 +94,7 @@ function Linkbar(props) {
                       className="px-4"
                       onClick={() => setOpenMenu(false)}
                     >
-                      classes
+                      Classes
                     </Link>
                   </div>
                   <div className="py-[10px] border-y-2">
@@ -103,7 +103,7 @@ function Linkbar(props) {
                       className="px-4 "
                       onClick={() => setOpenMenu(false)}
                     >
-                      personal
+                      Personal
                     </Link>
                   </div>
                   <div className="py-[10px] border-y-2">
@@ -112,7 +112,7 @@ function Linkbar(props) {
                       className="px-4"
                       onClick={() => setOpenMenu(false)}
                     >
-                      prices
+                      Prices
                     </Link>
                   </div>
                   <div className="py-[10px] border-y-2">
@@ -121,7 +121,7 @@ function Linkbar(props) {
                       className="px-4"
                       onClick={() => setOpenMenu(false)}
                     >
-                      schedule
+                      Schedule
                     </Link>
                   </div>
                   <div className="py-[10px] border-t-2">
@@ -130,7 +130,7 @@ function Linkbar(props) {
                       className="px-4"
                       onClick={() => setOpenMenu(false)}
                     >
-                      signup
+                      Signup
                     </Link>
                   </div>
                 </ul>
