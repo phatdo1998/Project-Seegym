@@ -1,6 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
-// import { MdOutlineClose } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 
 function Linkbar(props) {
@@ -25,12 +25,7 @@ function Linkbar(props) {
           </span>
           <ul className="xl:ml-0 ml-auto py-10 ">
             {openMenu && isMobile ? (
-              // <MdOutlineClose
-              //   size="24px"
-              //   className=" cursor-pointer"
-              //   onClick={handleMenu}
-              // />
-              <HiOutlineMenu
+              <MdOutlineClose
                 size="24px"
                 className=" cursor-pointer"
                 onClick={handleMenu}
@@ -91,43 +86,53 @@ function Linkbar(props) {
               </ul>
             )}
             {openMenu && (
-              <div className="w-full h-[240px] mt-2 z-50 absolute right-0 bg-white px-4 text-left text-black ">
+              <div className="w-full h-[240px] mt-2 z-50 absolute right-0 bg-white  text-left text-black ">
                 <ul className="flex flex-col">
-                  <Link
-                    to="/classes"
-                    className="py-[10px] border-y-2"
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    classes
-                  </Link>
-                  <Link
-                    to="/personal"
-                    className="py-[10px] border-y-2 "
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    personal
-                  </Link>
-                  <Link
-                    to="/prices"
-                    className="py-[10px] border-y-2"
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    prices
-                  </Link>
-                  <Link
-                    to="/schedule"
-                    className="py-[10px] border-y-2"
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    schedule
-                  </Link>
-                  <Link
-                    to="/signup"
-                    className="py-[10px] border-t-2"
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    signup
-                  </Link>
+                  <div className="py-[10px] border-y-2">
+                    <Link
+                      to="/classes"
+                      className="px-4"
+                      onClick={() => setOpenMenu(false)}
+                    >
+                      classes
+                    </Link>
+                  </div>
+                  <div className="py-[10px] border-y-2">
+                    <Link
+                      to="/personal"
+                      className="px-4 "
+                      onClick={() => setOpenMenu(false)}
+                    >
+                      personal
+                    </Link>
+                  </div>
+                  <div className="py-[10px] border-y-2">
+                    <Link
+                      to="/prices"
+                      className="px-4"
+                      onClick={() => setOpenMenu(false)}
+                    >
+                      prices
+                    </Link>
+                  </div>
+                  <div className="py-[10px] border-y-2">
+                    <Link
+                      to="/schedule"
+                      className="px-4"
+                      onClick={() => setOpenMenu(false)}
+                    >
+                      schedule
+                    </Link>
+                  </div>
+                  <div className="py-[10px] border-t-2">
+                    <Link
+                      to="/signup"
+                      className="px-4"
+                      onClick={() => setOpenMenu(false)}
+                    >
+                      signup
+                    </Link>
+                  </div>
                 </ul>
               </div>
             )}
