@@ -16,14 +16,14 @@ function Linkbar(props) {
   };
   return (
     <div className="bg-black text-white flex justify-center items-center">
-      <div className="xl:w-[1224px] z-10 w-[398px] px-4 pb-1 xl:px-0 ">
-        <div className="flex items-center xl:h-[92px]">
-          <span className="md:text-2xl text-xl font-bold py-10 px-4 xl:px-0 m-[-25px] xl:m-0">
+      <div className="md:w-[1224px] z-10 w-[398px] px-4 pb-1 md:px-0 ">
+        <div className="flex items-center md:h-[92px]">
+          <span className="md:text-2xl text-xl font-bold py-10 px-4 md:px-0 m-[-25px] md:m-0">
             <NavLink onClick={() => setOpenMenu(false)} to="/">
               See Gym
             </NavLink>
           </span>
-          <ul className="xl:ml-0 ml-auto py-10 ">
+          <ul className="md:ml-0 ml-auto py-10 ">
             {openMenu && isMobile ? (
               <MdOutlineClose
                 size="24px"

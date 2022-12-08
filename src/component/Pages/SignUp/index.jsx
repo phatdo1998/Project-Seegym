@@ -42,20 +42,20 @@ function SignUp() {
     >
       {(formik) => (
         <div className="bg-black ">
-          <div className=" text-white flex justify-center items-center px-4 w-[341] h-[170px] xl:px-0">
-            <div className="w-[1224px] h-[240px] flex items-center xl:mt-[100px] ">
-              <h1 className="font-extrabold xl:text-[56px] text-[36px] w-[230px] xl:w-full">
+          <div className=" text-white flex justify-center items-center px-4 w-[341] h-[170px] md:px-0">
+            <div className="w-[1224px] h-[240px] flex items-center md:mt-[100px] ">
+              <h1 className="font-extrabold md:text-[56px] text-[36px] w-[230px] md:w-full">
                 SIGN UP FOR A WORKOUT{" "}
               </h1>
             </div>
           </div>
           <div className="bg-black mt-[50px]">
             <div className="flex items-center justify-center px-4">
-              <div className="xl:w-[1224px] xl:h-[752px] text-black flex items-center h-[565px] w-full xl:mt-[80px]">
+              <div className="md:w-[1224px] md:h-[752px] text-black flex items-center h-[565px] w-full md:mt-[80px]">
                 <Form className="w-full">
                   <TextField
                     name="name"
-                    lable="Use name *"
+                    lable="Use name*"
                     placeholder="Your name"
                     type="text"
                   />
