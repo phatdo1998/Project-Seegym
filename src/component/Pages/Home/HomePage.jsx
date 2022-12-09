@@ -12,7 +12,7 @@ const HomePage = () => {
     <div className="">
       <Slogan />
 
-      <div className="w-full md:h-[1700px] h-[2000px] bg-white flex justify-center px-4 md:px-0 ">
+      <div className="w-full md:h-[1700px] h-[2000px] bg-white flex justify-center px-4 md:px-0 mt-[160px] md:mt-0   ">
         <div className="w-[1224px] h-[1520px] md:pb-10">
           <h1 className="text-[32px] md:text-5xl md:my-32 my-8 font-extrabold">
             POPULAR CLASSES
