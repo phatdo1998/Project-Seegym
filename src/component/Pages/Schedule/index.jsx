@@ -5,7 +5,7 @@ function Schedule() {
     <>
       <div className="bg-black">
         <div className=" text-white md:flex md:justify-center md:items-center">
-          <div className="md:w-[1224px] md:h-[240px] flex items-center w-full h-[125px] px-4">
+          <div className="md:w-[1224px] md:h-[240px] flex items-center w-full h-[125px] px-4 mt-[53px] mb-[35px]">
             <h1 className="font-extrabold md:text-[56px] text-4xl">SCHEDULE</h1>
           </div>
         </div>

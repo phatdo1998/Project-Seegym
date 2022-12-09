@@ -15,7 +15,7 @@ function Classes() {
     <>
       <div className="bg-black ">
         <div className="md:flex md:justify-center md:items-center">
-          <div className="h-[125px] w-[341px] text-white flex px-4 md:px-0 md:w-[1224px] md:h-[240px] ">
+          <div className="h-[125px] w-[341px] text-white flex px-4 md:px-0 md:w-[1224px] md:h-[240px] mt-[53px] mb-[35px] ">
             <div className="flex items-center ">
               <h1 className="text-[36px] font-extrabold md:text-5xl">
                 CLASSES

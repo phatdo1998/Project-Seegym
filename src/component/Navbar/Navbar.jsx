@@ -9,16 +9,18 @@ function Linkbar(props) {
   const handleMenu = () => {
     setOpenMenu(!openMenu);
   };
+
   const navLinkStyles = ({ isActive }) => {
     return {
       borderBottom: isActive ? "2px solid" : "",
     };
   };
+
   return (
     <div className="bg-black text-white flex justify-center items-center fixed top-0 left-0 right-0 z-50">
-      <div className="md:w-[1224px] z-10 w-[398px] px-4 pb-1 md:px-0 ">
+      <div className="md:w-[1224px] z-10 w-[398px]  pb-1 md:px-0 ">
         <div className="flex items-center md:h-[92px] h-[50px]">
-          <span className="md:text-2xl text-xl font-bold py-10 px-4 md:px-0 m-[-25px] md:m-0">
+          <span className="md:text-2xl text-xl font-bold py-10 px-4 md:px-0 md:m-0 pl-2 md:mr-[30px]">
             <NavLink onClick={() => setOpenMenu(false)} to="/">
               See Gym
             </NavLink>

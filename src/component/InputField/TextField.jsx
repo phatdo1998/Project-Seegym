@@ -11,7 +11,7 @@ const TextField = ({ lable, ...props }) => {
       </label>
       <input
         key="name"
-        className="w-full md:w-[503px]  py-[12px] pl-4 pr-14 text-black"
+        className="w-full md:w-[503px]  py-[12px] pl-4 pr-14 text-black rounded-md"
         {...field}
         {...props}
       />

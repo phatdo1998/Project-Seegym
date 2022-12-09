@@ -17,23 +17,26 @@ function SignUp() {
       }}
       validationSchema={Yup.object({
         name: Yup.string()
-          .required("vui lòng nhập tên của bạn")
-          .min(8, "vui lòng  nhập ít nhất 8 kí tự"),
+          .required("Please enter your username")
+          .min(8, "Please enter at least 8 characters"),
         email: Yup.string()
-          .required("vui lòng nhập email")
+          .required("Please enter your email address")
           // eslint-disable-next-line no-useless-escape
-          .matches(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, "email không chính xác"),
+          .matches(
+            /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+            "Email address is not valid"
+          ),
         password: Yup.string()
-          .required("vui lòng nhập mật khẩu")
+          .required("Please enter your password")
           .matches(
             /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/,
-            "nhập it nhất 7 kí tự và 1 chữ viết hoa "
+            "Please enter at least 7 characters and 1 uppercase "
           ),
         confirmPassword: Yup.string()
-          .required("vui lòng nhập lại mật khẩu")
+          .required("Please re-enter your password")
           .oneOf(
             [Yup.ref("password"), null],
-            "mật khẩu nhập lại không trùng khớp"
+            "Re-entered password does not match"
           ),
       })}
       onSubmit={() => {
@@ -42,7 +45,7 @@ function SignUp() {
     >
       {(formik) => (
         <div className="bg-black ">
-          <div className=" text-white flex justify-center items-center px-4 w-[341] h-[170px] md:px-0">
+          <div className=" text-white flex justify-center items-center px-4 w-[341] h-[170px] md:px-0 mt-[53px] mb-[35px] ">
             <div className="w-[1224px] h-[240px] flex items-center md:mt-[100px] ">
               <h1 className="font-extrabold md:text-[56px] text-[36px] w-[230px] md:w-full">
                 SIGN UP FOR A WORKOUT{" "}

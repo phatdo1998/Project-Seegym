@@ -8,7 +8,7 @@ function Slogan() {
         <img
           src={Header}
           alt=""
-          className="w-full h-[600px] md:h-full object-cover"
+          className="w-full h-[600px] md:h-[110%] object-cover"
         />
       </div>
       {/* {image && (
@@ -20,7 +20,7 @@ function Slogan() {
           />
         </div>
       )} */}
-      <div className="text-white bg-black md:flex md:items-center md:justify-center absolute top-0  md:top-[60px] md:right-[152px] bg-transparent z-10 ">
+      <div className="text-white bg-black md:flex md:items-center md:justify-center absolute top-0  md:top-[90px] md:right-[152px] bg-transparent z-10 ">
         <div className=" px-4 md:mt-0 md:w-[1224px] md:h-[784px] w-[370px] h-[429px] md:px-0 md:flex md:items-center  ">
           <div className="mt-[100px] md:mt-0">
             <span className="text-[40px] w-[300px]  font-extrabold md:flex md:flex-col md:justify-center ">
@@ -28,10 +28,10 @@ function Slogan() {
                 IT’S ALL ABOUT WHAT YOU CAN ACHIEVE
               </span>
             </span>
-            <div className="text-[18px] my-16 font-semibold font-sans leading-tight">
+            <div className="text-[18px] my-20 font-semibold font-sans leading-tight">
               Empower yourself to make the changes you need to make
             </div>
-            <Link to="/prices" className="btn hover:bg-red-600 ">
+            <Link to="/prices" className="btn hover:bg-red-600  ">
               LET'S GET STARTED
             </Link>
           </div>

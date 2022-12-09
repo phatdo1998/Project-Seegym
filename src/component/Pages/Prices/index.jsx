@@ -2,55 +2,10 @@ import Ready from "../../Ready/Ready";
 
 function Prices() {
   return (
-    // <>
-    //   <div className="bg-black">
-    //     <div className=" text-white flex md:justify-center items-center px-4">
-    //       <div className="md:w-[1224px] md:h-[240px] md:flex md:items-center w-[307px] h-[125px]">
-    //         <h1 className="font-extrabold md:text-[56px] text-4xl">
-    //           PRICES & PLANS
-    //         </h1>
-    //       </div>
-    //     </div>
-    //     <div className="bg-black ">
-    //       <div className="md:flex items-center md:justify-center text-white">
-    //         <div className=" md:h-[592px] md:w-[1224px] md:flex md:items-center md:flex-col md:pt-[130px] ">
-    //           <div className="grid grid-cols-4 gap-x-40 ">
-    //             <h1 className="text-5xl font-extrabold">BASIC</h1>
-    //             <h1 className="text-[38px] ">30$</h1>
-    //             <h1 className="text-5xl font-extrabold">UNLIMITED</h1>
-    //             <h1 className="text-[38px]">50$</h1>
-    //           </div>
-
-    //           <div className="w-full h-full grid grid-cols-2 gap-x-40 font-sans">
-    //             <div className="">
-    //               <p className="my-10">INCLUDED:</p>
-    //               <div className="">
-    //                 <p className="">• 2x group workouts of your choice</p>
-    //                 <p className="">• Unlimited gym access</p>
-    //                 <p className="">• Personal workout</p>
-    //               </div>
-    //             </div>
-
-    //             <div className="">
-    //               <p className="my-10">INCLUDED:</p>
-    //               <div className="">
-    //                 <p className="">• 2x group workouts of your choice</p>
-    //                 <p className="">• Unlimited gym access</p>
-    //                 <p className="">• 3x personal workouts</p>
-    //                 <p className="">• Personal workout</p>
-    //               </div>
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <Ready />
-    // </>
     <>
       <div className="bg-black">
         <div className="md:flex md:justify-center md:items-center">
-          <div className="w-[341px h-[125px] flex items-center px-4 text-white md:w-[1224px] md:h-[240px]">
+          <div className="w-[341px h-[125px] flex items-center px-4 text-white md:w-[1224px] md:h-[240px] mt-[53px] mb-[35px]">
             <h1 className="text-4xl font-extrabold md:text-[56px]">
               PRICES & PLANS
             </h1>
