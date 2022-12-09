@@ -23,7 +23,7 @@ function SignUp() {
           .required("Please enter your email address")
           // eslint-disable-next-line no-useless-escape
           .matches(
-            /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+            /^[\w-\.]+@([\w-]+)+[\w-]{2,4}$/,
             "Email address is not valid"
           ),
         password: Yup.string()
