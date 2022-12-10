@@ -88,48 +88,48 @@ function Linkbar(props) {
               </ul>
             )}
             {openMenu && (
-              <div className="w-full h-[240px] mt-2 z-50 absolute right-0 bg-white  text-left text-black ">
+              <div className="w-full h-[240px] mt-2 z-50 absolute right-0 bg-white  text-left text-black animate-appear ">
                 <ul className="flex flex-col">
-                  <div className="py-[10px] border-y-2">
+                  <div className=" border-y-2">
                     <Link
                       to="/classes"
-                      className="px-4"
+                      className="py-[10px] px-4 block"
                       onClick={() => setOpenMenu(false)}
                     >
                       Classes
                     </Link>
                   </div>
-                  <div className="py-[10px] border-y-2">
+                  <div className=" border-y-2">
                     <Link
                       to="/personal"
-                      className="px-4 "
+                      className="px-4 py-[10px] block"
                       onClick={() => setOpenMenu(false)}
                     >
                       Personal
                     </Link>
                   </div>
-                  <div className="py-[10px] border-y-2">
+                  <div className=" border-y-2">
                     <Link
                       to="/prices"
-                      className="px-4"
+                      className="px-4 py-[10px] block"
                       onClick={() => setOpenMenu(false)}
                     >
                       Prices
                     </Link>
                   </div>
-                  <div className="py-[10px] border-y-2">
+                  <div className=" border-y-2">
                     <Link
                       to="/schedule"
-                      className="px-4"
+                      className="px-4 py-[10px] block"
                       onClick={() => setOpenMenu(false)}
                     >
                       Schedule
                     </Link>
                   </div>
-                  <div className="py-[10px] border-t-2">
+                  <div className=" border-t-2">
                     <Link
                       to="/signup"
-                      className="px-4"
+                      className="px-4 block py-[10px]"
                       onClick={() => setOpenMenu(false)}
                     >
                       Signup

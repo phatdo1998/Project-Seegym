@@ -7,8 +7,18 @@ module.exports = {
       sans: ["DM Sans"],
     },
     extend: {
-      backgroundImage: {
-        "header-img": "url('./src/component/Header/img/header.png)",
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-50px)",
+            border: "none",
+          },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        appear: "appear 0.3s linear",
       },
     },
   },

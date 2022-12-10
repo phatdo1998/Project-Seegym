@@ -8,7 +8,7 @@ function Slogan() {
         <img
           src={Header}
           alt=""
-          className="w-full h-[600px] md:h-[110%] object-cover"
+          className="w-full h-[560px] md:h-[110%] object-cover"
         />
       </div>
       {/* {image && (
