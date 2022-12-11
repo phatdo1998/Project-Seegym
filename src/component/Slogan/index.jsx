@@ -20,8 +20,8 @@ function Slogan() {
           />
         </div>
       )} */}
-      <div className="text-white bg-black lg:flex lg:items-center lg:justify-center absolute top-0  lg:top-[90px] lg:right-[152px] md:w-full bg-transparent z-10 ">
-        <div className=" px-4 lg:mt-0 lg:w-[1224px] lg:h-[784px] w-[370px] h-[429px] lg:px-0 lg:flex lg:items-center md:flex md:justify-center md:items-center md:mt-[70px]  md:w-full ">
+      <div className="text-white bg-black lg:flex lg:items-center lg:justify-center absolute top-0  lg:top-[90px]  md:w-full bg-transparent z-10 ">
+        <div className=" px-4 lg:mt-0 lg:w-[1224px] lg:h-[784px] w-[370px] h-[429px] lg:px-0 lg:flex lg:items-center md:flex md:justify-center lg:justify-start md:items-center md:mt-[70px] md:w-full ">
           <div className="mt-[100px] lg:mt-0 md:w-[382px] md:h-[429px] ">
             <span className="text-[40px] w-[300px]  font-extrabold lg:flex lg:flex-col lg:justify-center ">
               <span className=" lg:text-[75px] lg:w-[836px] lg:leading-tight w-[400px] leading-tight">
