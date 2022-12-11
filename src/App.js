@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (windowSize.width < 500) {
+    if (windowSize.width < 1024) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -40,7 +40,7 @@ function App() {
   }, [windowSize]);
 
   return (
-    <div className="w-[100%] font-oswald overflow-hidden ">
+    <div className="w-full font-oswald overflow-hidden ">
       <Routes>
         {publicRoutes.map((route, index) => {
           const Layout = (route.layout = DefaultLayout);

@@ -18,28 +18,33 @@ function Linkbar(props) {
 
   return (
     <div className="bg-black text-white flex justify-center items-center fixed top-0 left-0 right-0 z-50">
-      <div className="md:w-[1224px] z-10 w-[398px]  pb-1 md:px-0 ">
-        <div className="flex items-center md:h-[92px] h-[50px]">
-          <span className="md:text-2xl text-xl font-bold py-10 px-4 md:px-0 md:m-0 pl-2 md:mr-[30px]">
+      <div className="lg:w-[1224px] z-10 w-[398px] md:w-full  pb-1 lg:px-0 ">
+        <div className="flex items-center lg:h-[92px] h-[50px] md:w-full md:px-4">
+          <span className="lg:text-2xl text-xl font-bold py-10 px-4 md:px-0 lg:px-0 lg:m-0 pl-2 lg:mr-[30px]">
             <NavLink onClick={() => setOpenMenu(false)} to="/">
               See Gym
             </NavLink>
           </span>
-          <ul className="md:ml-0 ml-auto py-10 ">
+          <ul className="lg:ml-0 ml-auto py-10 ">
             {openMenu && isMobile ? (
               <MdOutlineClose
+                onBlur={() => console.log("123")}
                 size="24px"
                 className=" cursor-pointer"
                 onClick={handleMenu}
               />
             ) : !openMenu && isMobile ? (
               <HiOutlineMenu
+                onBlur={() => console.log("123")}
                 size="24px"
                 className=" cursor-pointer"
                 onClick={handleMenu}
               />
             ) : (
-              <ul className="flex items-center gap-8 py-10 px-4 text-base">
+              <ul
+                onBlur={() => console.log("123")}
+                className="flex items-center gap-8 py-10 px-4 text-base"
+              >
                 <li>
                   <NavLink
                     style={navLinkStyles}
