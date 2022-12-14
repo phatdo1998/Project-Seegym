@@ -32,7 +32,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (windowSize.width < 1024) {
+    if (windowSize.width < 1280) {
       setMobile(true);
     } else {
       setMobile(false);
@@ -51,7 +51,7 @@ function App() {
               path={route.path}
               element={
                 <Layout isMobile={isMobile}>
-                  <Page />
+                  <Page isMobile={isMobile} />
                 </Layout>
               }
             />

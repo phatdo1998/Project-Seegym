@@ -4,6 +4,6 @@
 
 @layer components {
   .btn {
-    @apply py-[15px] px-[50px] bg-[#FF1010] font-bold mb-8 text-white hover:bg-red-600;
+    @apply py-[15px] px-[50px] bg-[#FF1010] font-bold mb-8 text-white hover:bg-red-600 rounded-md;
   }
 }

@@ -45,16 +45,18 @@ function SignUp() {
     >
       {(formik) => (
         <div className="bg-black ">
-          <div className=" text-white flex justify-center items-center px-4 w-[341] h-[170px] md:px-0 mt-[53px] mb-[35px] ">
-            <div className="w-[1224px] h-[240px] flex items-center md:mt-[100px] ">
-              <h1 className="font-extrabold md:text-[56px] text-[36px] w-[230px] md:w-full">
-                SIGN UP FOR A WORKOUT{" "}
-              </h1>
+          <div className="xl:flex xl:justify-center xl:items-center md:flex md:justify-center md:items-center">
+            <div className="h-[125px] md:w-[420px] w-[341px] text-white flex px-4 xl:px-0 md:px-0  xl:w-[1224px] xl:h-[240px] mt-[53px] mb-[35px] md:mt-[90px] ">
+              <div className="flex items-center xl:justify-center md:px-4 ">
+                <h1 className="text-[36px] font-extrabold xl:text-5xl ">
+                  SIGN UP FOR A WORKOUT
+                </h1>
+              </div>
             </div>
           </div>
-          <div className="bg-black mt-[50px]">
-            <div className="flex items-center justify-center px-4">
-              <div className="md:w-[1224px] md:h-[752px] text-black flex items-center h-[565px] w-full md:mt-[80px]">
+          <div className="bg-black mt-[50px] xl:mt-0">
+            <div className="flex items-center justify-center px-4 md:flex md:justify-center md:items-center">
+              <div className="md:px-4 xl:w-[1224px] md:w-[420px] xl:h-[660px] text-black flex items-center h-[565px] w-full">
                 <Form className="w-full">
                   <TextField
                     name="name"

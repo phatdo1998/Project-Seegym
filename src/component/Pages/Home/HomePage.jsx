@@ -12,19 +12,19 @@ const HomePage = () => {
     <div className="">
       <Slogan />
 
-      <div className="w-full lg:h-[1615px] h-[1960px] md:h-[1770px] bg-white flex justify-center  px-4 lg:px-0 mt-[170px] md:mt-[325px] lg:mt-28   ">
-        <div className="w-[1224px] h-[1520px] lg:pb-10 md:flex md:justify-center md:items-center">
+      <div className="w-full xl:h-[1615px] h-[1960px] md:h-[1770px] bg-white flex justify-center  px-4 xl:px-0 mt-[170px] md:mt-[325px] xl:mt-28   ">
+        <div className="w-[1224px] h-[1520px] xl:pb-10 md:flex md:justify-center md:items-center">
           <div className="">
-            <h1 className="text-[32px] lg:text-5xl lg:my-32 my-8 font-extrabold">
+            <h1 className="text-[32px] xl:text-5xl xl:my-32 my-8 font-extrabold">
               POPULAR CLASSES
             </h1>
 
-            <div className="grid lg:grid-cols-1 md:flex md:justify-center md:items-center md:w-full lg:block">
-              <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-y-32 lg:gap-x-48 gap-10  md:w-[382px] lg:w-full ">
-                <div className="mb-10">
+            <div className="grid xl:grid-cols-1 md:flex md:justify-center md:items-center md:w-full xl:block">
+              <div className="grid grid-cols-1 xl:grid-cols-2 xl:gap-y-32 xl:gap-x-48 gap-10  md:w-[382px] xl:w-full ">
+                <div className="mb-10 l">
                   <a href="/cardio" className="">
                     <img src={Cadio} alt="" className="w-full h-full" />
-                    <div className="font-bold text-2xl my-[1.25rem] lg:text-3xl">
+                    <div className="font-bold text-2xl my-[1.25rem] xl:text-3xl">
                       Cardio
                     </div>
                   </a>
@@ -33,7 +33,7 @@ const HomePage = () => {
                 <div className="mb-10">
                   <a href="/yoga" className="">
                     <img src={Yoga} alt="" className="w-full h-full" />
-                    <div className="font-bold text-2xl my-[1.25rem] lg:text-3xl">
+                    <div className="font-bold text-2xl my-[1.25rem] xl:text-3xl">
                       AirYoga
                     </div>
                   </a>
@@ -41,7 +41,7 @@ const HomePage = () => {
                 <div className="mb-10">
                   <a href="/lifting" className="">
                     <img src={Lifting} alt="" className="w-full h-full" />
-                    <div className="font-bold text-2xl my-[1.25rem] lg:text-3xl">
+                    <div className="font-bold text-2xl my-[1.25rem] xl:text-3xl">
                       Lifting
                     </div>
                   </a>
@@ -49,7 +49,7 @@ const HomePage = () => {
                 <div className="mb-10">
                   <a href="/press" className="">
                     <img src={Press} alt="" className="w-full h-full" />
-                    <div className="font-bold text-2xl my-3 lg:text-3xl">
+                    <div className="font-bold text-2xl my-3 xl:text-3xl">
                       Press & Back
                     </div>
                   </a>
