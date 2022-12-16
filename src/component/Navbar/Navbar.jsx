@@ -17,9 +17,9 @@ function Navbar(props) {
   };
 
   return (
-    <div className="bg-black text-white flex justify-center items-center fixed top-0 left-0 right-0 z-50">
+    <div className="bg-black text-white flex justify-center items-center fixed top-0 left-0 right-0 z-50 ">
       <div className="xl:w-[1224px] z-10  md:w-full  pb-1 xl:px-0 w-full ">
-        <div className="flex items-center xl:h-[92px] h-[50px] md:w-full md:px-4 xl:px-0 md:justify-between lg:justify-start ">
+        <div className="flex items-center xl:h-[92px] h-[50px] md:w-full  xl:px-0 md:justify-between lg:justify-start ">
           <span className="xl:text-2xl text-xl font-bold py-10 px-4 md:px-4 xl:px-0 xl:m-0 pl-2 xl:mr-[30px] ">
             <NavLink onClick={() => setOpenMenu(false)} to="/">
               See Gym
@@ -28,14 +28,12 @@ function Navbar(props) {
           <ul className="xl:ml-0 ml-auto py-10 ">
             {openMenu && isMobile ? (
               <MdOutlineClose
-                onBlur={() => console.log("123")}
                 size="24px"
-                className=" cursor-pointer"
+                className=" cursor-pointer md:mx-4 mx-4"
                 onClick={handleMenu}
               />
             ) : !openMenu && isMobile ? (
               <HiOutlineMenu
-                onBlur={() => console.log("123")}
                 size="24px"
                 className=" cursor-pointer md:mx-4 mx-4"
                 onClick={handleMenu}
@@ -93,8 +91,11 @@ function Navbar(props) {
               </ul>
             )}
             {openMenu && (
-              <div className="w-full h-[240px] mt-2 z-50 absolute right-0 bg-white  text-left text-black animate-appear ">
-                <ul className="flex flex-col">
+              <div
+                onClick={() => setOpenMenu(false)}
+                className="w-full h-[4040px] mt-2 z-50 absolute right-0 bg-transparent text-left text-black animate-appear "
+              >
+                <ul className="flex flex-col bg-white">
                   <div className=" border-y-2 ">
                     <Link
                       to="/classes"
